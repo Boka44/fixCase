@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FixCase</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+
+	<h1>FixCase</h1>
+	<h3>A quick way to fix capitalization errors.</h3>
+	<p>Can convert to standard capitalization or camelCase for those lazy developers.</p>
+	<p><em>Rule: one space per words and one space between sentences.</em></p>
+	
+	<select id="select">
+		<option value="standard">Standard capitalization</option>
+		<option value="camel">camelCase</option>
+		<option value="upper">UPPERCASE</option>
+		<option value="lower">lowercase</option>
+	</select>
+
+	<p>Insert text below:</p>
+	<textarea type="text" name="text" id="text" rows="10" cols="50" required placeholder="Insert text here."></textarea>
+	<br>
+	<button name="submit">Submit</button>
+
+	<p>Result:</p>
+	<textarea type="text" name="result" id="result" rows="10" cols="50" required placeholder="Result"></textarea>
+	
+<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
